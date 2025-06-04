@@ -29,10 +29,10 @@ if (empty($profile_pic)) {
 <div class="container">
     <div class="sidebar">
         <h3><?= htmlspecialchars($name) ?></h3>
-        <a href="profile.php">Profile</a>
         <?php if ($role === 'admin'): ?>
             <a href="admin.php">Admin Panel</a>
         <?php endif; ?>
+        <a href="profile.php">Profile</a>
         <a href="logout.php">Logout</a>
     </div>
     <div class="main-content">
