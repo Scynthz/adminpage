@@ -1,0 +1,130 @@
+/* Reset + Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f8fb;
+    color: #183642;
+}
+
+/* Header */
+header {
+    background-color: #dff1f3;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #114b5f;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #114b5f;
+    font-weight: 600;
+}
+
+/* Buttons */
+button, input[type="submit"], a.button {
+    background-color: #29a3a3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:hover, input[type="submit"]:hover, a.button:hover {
+    background-color: #208080;
+}
+
+/* Form */
+form {
+    background: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+label {
+    font-weight: 600;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #eaf9f9;
+}
+
+/* Admin Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #e6f7f7;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar a {
+    display: block;
+    color: #114b5f;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.sidebar a:hover {
+    color: #29a3a3;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+img.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
